@@ -9,49 +9,81 @@
 <body>
     
   <header>
-    <div class="facebook"> <h1>facebook</h1> <div>
+    <div class="facebook"> <img src="./imgs/logo.jpg" alt="facebook" width=215 height=80> </div>
+    	<br>
   
-    <div id="login"> 
   	  <div class="loginfo">
-  	  	<form class= "loginfo">
-  	  Email or Phone: <br> 
-  	  	<input type = "text" name = "login"> <br> 
-  	  	<div class="chkbtn"> 
-  	  	<button type = "checkbox" value = "1"> </button> Keep me logged in 
-  	    </div> <!-- chkbtn -->
-  	  	<br>
-  	  Password: <br> <input type = "text" name = "loginpass"> 
-      	</form> 
-      </div>  <!-- cloginfo -->
-    </div> <!--idloginfo -->
+  	  	<form class= "formlogin">
+	  	  	<div class="loginemail">
+	  	  	Email or Phone: <br> 
+	  	  	<input type = "text" name = "loginemail"> 
+	  	  	</div>
+
+	  	  	<div class="chkbtn"> 
+	  	  	<button type = "checkbox" value = "1"> </button> 
+	  	  	Keep me logged in 
+	  	    </div> <!-- chkbtn -->
+	  	    <br>
+
+			<div class="password">
+	  	  	Password: <br> <input type = "text" name = "loginpass"> 
+	      	</div>
+      	</form>
       
-    <div class="forgot"> <a href>Forgot your Password<a> </div>
-    
-    <button type = "submit" form = "loginfo" id = "Loginbutton"> <a href>Log In</a> </button>
+    <div class="forgot"> <a href>Forgot your Password<a> 
+    </div> <!-- cforgot -->
+    <br>
+
+    <div>
+    	<button type = "submit" form = "loginfo" id = "Loginbutton"> <a href>Log In</a> </button>
+    </div>
+
+    </div> <!--idlogin -->
 
   </header>
 
 <section id = "globalbody">
 
-  	<div class="ad1"> <h1> Sign Up </h1> <div>
+  	<div class="ad1"> <h1> Sign Up </h1> </div>
   	<div class="ad2"> <h3> It's Free and always will be </h3> </div> 
   	<div class="ad3"> <h2> Connect with your friends and<br>the world around you with Facebook</h2> </div>
 
-  	<div class="img1"> <img src="./imgs/article.jpg" alt="article" width=60 height=60> <p><b>See photos and updates</b> from friends in News Feed </p> </div>
-  	<div class="img2"> <img src="./imgs/monitor.jpg" alt="article" width=60 height=60> <p><b>Share what's new</b> in your life on your Timeline </p> </div>
-  	<div class="img3"> <img src="./imgs/element.jpg" alt="article" width=60 height=60> <p><b>Find more</b> of what you're looking for with Facebook Search <p> </div>
+	<div>
+
+  	<div class="img1"> <img class="img1" src="./imgs/article.jpg" alt="article" width=60 height=60> <b>See photos and updates</b> from friends in News Feed </div>
+  	<div class="img2"> <img class="img2"src="./imgs/monitor.jpg" alt="article" width=60 height=60> <b>Share what's new</b> in your life on your Timeline </div>
+  	<div class="img3"> <img class="img3" src="./imgs/element.jpg" alt="article" width=60 height=60> <b>Find more</b> of what you're looking for with Facebook Search </div>
+
+  </div> <!-- imgs -->
 
 <!-- Begin forms for sign up, 5 -->
+<section id="SigningUp"
     <div id = "Sign Up"> 
     	<form id = "Signupforms"> 
-    	  First Name: <br> <input type = "text" placeholder= "First Name"> <br>
-    	  Last Name: <br> <input type = "text" placeholder= "Last Name"> <br>
-          Email or Phone Number: <br> <input type = "text" placeholder= "Email or Phone Number"> <br>
-       	  Reenter: <br> <input type = "text" placeholder= "Reenter Email or Phone"> <br>
-          New Password: <br> <input type = "text" placeholder= "New Password"> </form> 
-    	</div>
+    	  <div class="1name">
+    	  	First Name: <br> <input type = "text" placeholder= "First Name"> 
+    	  	<br>
+    	  </div>
+    	  <div class="2name0">
+    	  	Last Name: <br> <input type = "text" placeholder= "Last Name"> 
+    	  	<br>
+    	  </div>
+          <div class="newemail">
+          	Email or Phone Number: <br> <input type = "text" placeholder= "Email or Phone Number"> 
+          	<br>
+          </div>
+       	  <div class="reenter">
+       	  	Reenter: <br> <input type = "text" placeholder= "Reenter Email or Phone"> 
+       	  	<br>
+       	  </div>
+          <div class="newpassword">
+          	New Password: <br> <input type = "text" placeholder= "New Password"> </form>
+          </div>	 
+    </div>
+</section>
 <br>
 
+<section id="Birthdate/sex">
 	<div class="bday"> <h2>Birthday</h2> </div>
   		<div class="month"> <h3> Month </h3>
   			<select name="birthday_month" id="month" title="Month">
@@ -230,20 +262,28 @@
 				<option value="1900">1900</option>
 		   </select>
 
-	<div class="bdayQ"> <p><a href>Why do I need to provide my birthdate</a><p> </div>
-	<div> 
+	<div class="bdayQ"> <p><a href>Why do I need to provide my birthdate</a><p> 
+	</div>
+
+	<div class="sex"> 
 		<form class="sex input"> <input type = "radio" name= "sex" value= male> Male <input type = "radio" name= "sex" value= female> Female
 			<!-- Both Male and Female included here -->
 		</form>
+	</div>
+</section>
 
-	<div id="T/C"><p>By clicking Sign Up, you agree to our Terms and that you have<br>
-		read our <a href>Data Policy</a>, including our <a href>Cookie Use</a>.</p></div>
+	<div id="T/C"><p>By clicking Sign Up, you agree to our Terms and 	that you have
+		<br>
+	   read our <a href>Data Policy</a>, including our <a href>Cookie Use</a>.</p>
+	</div>
 
-	<div id=""><button id="Sign Up" name="signup" form= "Signupforms"><a href>Sign Up</button>
+	<div id="finalizesignup"><button id="Sign Up" name="signup" form= "Signupforms"><a href>Sign Up</button>
+	</div>
 
-	<div><p><a href>Create a Page</a> for a celebrity, band or business.</p></div>
+	<div class="last line"><p><a href>Create a Page</a> for a celebrity, band or business.</p>
+	</div>
 
-	<div><footer> <h1>LOTS OF LINKS</h1> </footer></div>
+	<div id="footer"><footer> <h1>LOTS OF LINKS</h1> </footer></div>
 
 </section>
 

@@ -1,20 +1,31 @@
 /*Facebook.css*/
 
 body {
-	background-color:;
+	background-color:#d9d9d9;
 }
 
 header {
-	background-color: #0066cc;
+	background-color: #3b5998;
+	border: 1px groove black;
 }
 
-div {
-	/*float: login right;*/
-}		
-
-h1 {
-    color:;
+.facebook {
+	width: 10%;
+	margin-right: 0;
 }
+
+img.img1 {
+	vertical-align: middle;
+}
+
+img.img2 {
+	vertical-align: middle;
+}
+
+img.img3 {
+	vertical-align: middle;
+}
+
 
 
 
