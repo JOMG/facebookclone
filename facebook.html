@@ -9,36 +9,47 @@
 <body>
     
   <header>
-    <div class="facebook"> <img src="./imgs/logo.jpg" alt="facebook" width=215 height=80> </div>
-    	<br>
-  
-  	  <div class="loginfo">
-  	  	<form class= "formlogin">
-	  	  	<div class="loginemail">
-	  	  	Email or Phone: <br> 
-	  	  	<input type = "text" name = "loginemail"> 
-	  	  	</div>
+    <img src="./imgs/logo.jpg" alt="facebook" width=215 height=80> 
 
-	  	  	<div class="chkbtn"> 
-	  	  	<button type = "checkbox" value = "1"> </button> 
-	  	  	Keep me logged in 
-	  	    </div> <!-- chkbtn -->
-	  	    <br>
+	<div class="loginfo">
+  		<table class="loginfo">
+  			<tr>
+  					<td> Email or Phone: 
+  					</td>
+  					<td> Password:
+  					</td>
+  					<td> </td> 
+  			</tr>	
+			<tr>
+				<td>
+					<form>
+					<input type = "text" name = "loginemail">
+					</form>
+				</td>
+				<td>
+					<form> 
+					<input type = "text" name = "loginpass"> 
+					</form>
+				</td>
+				<td>
+    				<button type = "submit" form = "loginfo" id = "Loginbutton"> 
+    				<a href>Log In</a> 
+    				</button>
+    			</td>
+    		</tr>
+			<tr>
+				<td>
+	  	  			<button type = "checkbox" value = "1"> </button> Keep me logged in
+	  	    	</td>
+	  	    	<td>
+	  	    		<form class="forgot">
+	  	    			<a href>Forgot your Password<a>
+    				</form>
+				</td>
+				<td> </td>
+		</table>
+    </div> <!-- end table -->
 
-			<div class="password">
-	  	  	Password: <br> <input type = "text" name = "loginpass"> 
-	      	</div>
-      	</form>
-      
-    <div class="forgot"> <a href>Forgot your Password<a> 
-    </div> <!-- cforgot -->
-    <br>
-
-    <div>
-    	<button type = "submit" form = "loginfo" id = "Loginbutton"> <a href>Log In</a> </button>
-    </div>
-
-    </div> <!--idlogin -->
 
   </header>
 
@@ -48,7 +59,7 @@
   	<div class="ad2"> <h3> It's Free and always will be </h3> </div> 
   	<div class="ad3"> <h2> Connect with your friends and<br>the world around you with Facebook</h2> </div>
 
-	<div>
+  <div>
 
   	<div class="img1"> <img class="img1" src="./imgs/article.jpg" alt="article" width=60 height=60> <b>See photos and updates</b> from friends in News Feed </div>
   	<div class="img2"> <img class="img2"src="./imgs/monitor.jpg" alt="article" width=60 height=60> <b>Share what's new</b> in your life on your Timeline </div>
